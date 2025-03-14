@@ -11,6 +11,7 @@
     "dev:frontend": "vite",
     "dev:node": "node --experimental-strip-types ./scripts/dev.ts",
     "lint": "eslint .",
+    "pocketbase:install": "pnpx install-pocketbase",
     "routes:delete": "rm ./src/routeTree.gen.ts",
     "prestart": "pnpm run build",
     "start": "./pocketbase serve"
@@ -26,6 +27,7 @@
     "@tanstack/react-router": "^1.114.17",
     "clsx": "^2.1.1",
     "daisyui": "^5.0.4",
+    "pocketbase": "^0.25.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "tailwind-merge": "^3.0.2",
