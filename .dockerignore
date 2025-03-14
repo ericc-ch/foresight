@@ -1,0 +1,19 @@
+.vscode
+node_modules
+LICENSE
+README.md
+
+# Git
+.git
+.gitignore
+
+# Pocketbase
+pocketbase
+pb_data
+pb_public
+
+# Aider
+.aider*
+
+# Tanstack Router
+*.gen.ts
