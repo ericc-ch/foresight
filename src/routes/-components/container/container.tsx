@@ -6,8 +6,9 @@ import classes from "./container.module.css"
 
 interface ContainerProps {
   children?: ReactNode
+  centered?: boolean
 }
 
-export function Container({ children }: ContainerProps) {
-  return <main className={clsx(classes.container)}>{children}</main>
+export function Container({ children, centered = false }: ContainerProps) {
+  return <main className={clsx(classes.container, centered && classes.centered)}>{children}</main>
 }

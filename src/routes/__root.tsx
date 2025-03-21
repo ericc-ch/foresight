@@ -1,4 +1,5 @@
 import "./reset.css"
+import "./theme.css"
 
 import "@progress/kendo-theme-fluent/dist/all.css"
 import { createRootRoute, Outlet } from "@tanstack/react-router"
