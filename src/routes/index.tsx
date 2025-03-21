@@ -1,4 +1,7 @@
+import { TextArea } from "@progress/kendo-react-inputs"
 import { createFileRoute } from "@tanstack/react-router"
+
+import { Container } from "./-components/container/container"
 
 export const Route = createFileRoute("/")({
   component: RouteComponent,
@@ -6,10 +9,8 @@ export const Route = createFileRoute("/")({
 
 function RouteComponent() {
   return (
-    <div className="bg-base-200 flex min-h-screen flex-col">
-      <main className="flex-1">
-        <h1>Home</h1>
-      </main>
-    </div>
+    <Container>
+      <TextArea />
+    </Container>
   )
 }

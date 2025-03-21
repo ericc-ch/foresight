@@ -17,6 +17,12 @@
     "*": "bun run lint --fix"
   },
   "dependencies": {
+    "@progress/kendo-licensing": "^1.5.1",
+    "@progress/kendo-react-inputs": "^10.0.0",
+    "@progress/kendo-react-layout": "^10.0.0",
+    "@progress/kendo-theme-default": "^10.4.0",
+    "@progress/kendo-theme-fluent": "^10.4.0",
+    "clsx": "^2.1.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
@@ -41,6 +47,8 @@
     "vite-tsconfig-paths": "^5.1.4"
   },
   "trustedDependencies": [
-    "@swc/core"
+    "@swc/core",
+    "esbuild",
+    "simple-git-hooks"
   ]
 }
