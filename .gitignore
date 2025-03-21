@@ -23,4 +23,6 @@ dist-ssr
 
 # tanstack router
 *.gen.ts
+
+# aider
 .aider*
