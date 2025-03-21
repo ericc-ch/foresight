@@ -23,6 +23,7 @@
     "@progress/kendo-theme-default": "^10.4.0",
     "@progress/kendo-theme-fluent": "^10.4.0",
     "clsx": "^2.1.1",
+    "ofetch": "^1.4.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
