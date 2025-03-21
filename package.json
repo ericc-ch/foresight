@@ -6,46 +6,41 @@
   "type": "module",
   "scripts": {
     "build": "tsc -b && vite build",
-    "dev:frontend": "vite",
+    "dev": "vite",
     "lint": "eslint .",
-    "routes:delete": "rm ./src/routeTree.gen.ts",
+    "routes:delete": "rm ./src/routeTree.gen.ts"
   },
   "simple-git-hooks": {
-    "pre-commit": "pnpm exec lint-staged"
+    "pre-commit": "bunx lint-staged"
   },
   "lint-staged": {
-    "*": "pnpm run lint --fix"
+    "*": "bun run lint --fix"
   },
   "dependencies": {
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@echristian/eslint-config": "^0.0.37",
+    "@echristian/eslint-config": "^0.0.39",
     "@tanstack/eslint-plugin-router": "^1.114.12",
-    "@tanstack/router-devtools": "^1.114.21",
-    "@tanstack/router-plugin": "^1.114.17",
-    "@types/node": "^22.13.10",
-    "@types/react": "^19.0.10",
+    "@tanstack/router-devtools": "^1.114.27",
+    "@tanstack/router-plugin": "^1.114.27",
+    "@types/node": "^22.13.11",
+    "@types/react": "^19.0.12",
     "@types/react-dom": "^19.0.4",
-    "@vitejs/plugin-react-swc": "^3.8.0",
+    "@vitejs/plugin-react-swc": "^3.8.1",
     "eslint": "^9.22.0",
     "jiti": "^2.4.2",
     "lint-staged": "^15.5.0",
     "prettier": "^3.5.3",
     "prettier-plugin-packagejson": "^2.5.10",
-    "simple-git-hooks": "^2.11.1",
+    "simple-git-hooks": "^2.12.1",
     "tsx": "^4.19.3",
     "typescript": "^5.8.2",
     "vite": "^6.2.2",
     "vite-tsconfig-paths": "^5.1.4"
   },
-  "packageManager": "pnpm@10.6.3",
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "@swc/core",
-      "esbuild",
-      "simple-git-hooks"
-    ]
-  }
+  "trustedDependencies": [
+    "@swc/core"
+  ]
 }

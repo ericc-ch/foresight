@@ -12,7 +12,7 @@ export default config(
 
     prettier: {
       tailwindStylesheet: "./src/app.css",
-      plugins: ["prettier-plugin-packagejson", "prettier-plugin-tailwindcss"],
+      plugins: ["prettier-plugin-packagejson"],
     },
   },
   {
