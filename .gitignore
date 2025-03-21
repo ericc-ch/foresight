@@ -21,11 +21,6 @@ dist-ssr
 *.sln
 *.sw?
 
-# Pocketbase
-pocketbase
-pb_data/
-pb_public/
-.aider*
-
 # tanstack router
 *.gen.ts
+.aider*
