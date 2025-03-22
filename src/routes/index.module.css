@@ -12,3 +12,38 @@
   border-radius: var(--radius-md);
   overflow: hidden;
 }
+
+.noteForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.titleInput {
+  margin-top: var(--space-md);
+  padding: 8px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  font-size: var(--font-size-md);
+}
+
+.saveButton {
+  align-self: flex-end;
+  padding: 8px 16px;
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.saveButton:hover {
+  background-color: var(--color-primary-dark, #0056b3);
+}
+
+.hidden {
+  display: none;
+}

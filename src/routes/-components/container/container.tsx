@@ -10,5 +10,9 @@ interface ContainerProps {
 }
 
 export function Container({ children, centered = false }: ContainerProps) {
-  return <main className={clsx(classes.container, centered && classes.centered)}>{children}</main>
+  return (
+    <main className={clsx(classes.container, centered && classes.centered)}>
+      {children}
+    </main>
+  )
 }
